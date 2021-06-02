@@ -194,7 +194,7 @@ def add_help_menu(
         else:
             CMD_LIST[
                 file_name
-            ] += f"\n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** {cmd_helpz}"
+            ] += f"\n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** {cmd_helpz} \n{cmd_telegraph}"
     else:
         if file_name not in XTRA_CMD_LIST.keys():
             XTRA_CMD_LIST[file_name] = cmd_helper
