@@ -186,7 +186,7 @@ def add_help_menu(
             is_official = False
         file_name = os.path.basename(previous_stack_frame.filename.replace(".py", ""))
     cmd_helpz = example.format(ch=Config.COMMAND_HANDLER)
-    cmd_helper = f"**Module Name :** `{file_name.replace('_', ' ').title()}` \n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** `{cmd_helpz}`"
+    cmd_helper = f"**NOME MODULO:** `{file_name.replace('_', ' ').title()}` \n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** `{cmd_helpz}`"
     if is_official:
         if file_name not in CMD_LIST.keys():
             CMD_LIST[file_name] = cmd_helper
