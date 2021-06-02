@@ -132,7 +132,7 @@ async def is_media(message):
 
 @friday_on_cmd(
     ["delfilters"],
-    cmd_help={"help": "Delete All The Filters in chat!", "example": "{ch}delfilters"},
+    cmd_help={"help": "Delete All The Filters in chat!", "example": "{ch}delfilters", "telegraph": "{cftg}"},
 )
 async def del_all_filters(client, message):
     pablo = await edit_or_reply(message, "`Processing...`")
