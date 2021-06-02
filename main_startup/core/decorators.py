@@ -186,21 +186,21 @@ def add_help_menu(
             is_official = False
         file_name = os.path.basename(previous_stack_frame.filename.replace(".py", ""))
     cmd_helpz = example.format(ch=Config.COMMAND_HANDLER)
-    cmd_helper = f"**NOME MODULO:** `{file_name.replace('_', ' ').title()}` \n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** `{cmd_helpz}`"
+    cmd_helper = f"**NOME MODULO:** `{file_name.replace('_', ' ').title()}` \n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** {cmd_helpz}"
     if is_official:
         if file_name not in CMD_LIST.keys():
             CMD_LIST[file_name] = cmd_helper
         else:
             CMD_LIST[
                 file_name
-            ] += f"\n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** `{cmd_helpz}`"
+            ] += f"\n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** {cmd_helpz}"
     else:
         if file_name not in XTRA_CMD_LIST.keys():
             XTRA_CMD_LIST[file_name] = cmd_helper
         else:
             XTRA_CMD_LIST[
                 file_name
-            ] += f"\n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** `{cmd_help}` \n**╰ 🔎 esempio:** `{cmd_helpz}`"
+            ] += f"\n\n**╭ ✏ comando:** `{Config.COMMAND_HANDLER}{cmd}` \n**├ ℹ** <u>{cmd_help}</u> \n**╰ 🔎 esempio:** {cmd_helpz}"
             
 
 def add_handler(filter_s, func_, cmd):
