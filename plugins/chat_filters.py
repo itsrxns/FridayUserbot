@@ -23,7 +23,7 @@ from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
 
 @friday_on_cmd(
     ["delfilter"],
-    cmd_help={"help": "Delete A Filter!", "example": "{ch}delfilter (filter name)"},
+    cmd_help={"help": "cancella un filtro", "example": "{ch}delfilter (filter name)"},
 )
 async def del_filterz(client, message):
     note_ = await edit_or_reply(message, "`Processing..`")
