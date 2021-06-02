@@ -54,6 +54,7 @@ class Config(object):
     MONGO_DB = os.environ.get("MONGO_DB", None)
     LOG_GRP = int(os.environ.get("LOG_GRP", False))
     COMMAND_HANDLER = os.environ.get("COMMAND_HANDLER", ".")
+    CHATFILTERS_GRAPH= os.environ.get("CHATFILTERS_GRAPH", "https://telegra.ph/Test-06-02-97")
     SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
     AFS = list(SUDO_USERS)
     CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "✘")
