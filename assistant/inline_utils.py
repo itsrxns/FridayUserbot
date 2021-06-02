@@ -542,7 +542,7 @@ async def give_plugin_cmds(client, cb):
         is_official = False
     cmd_list = CMD_LIST if is_official else XTRA_CMD_LIST
     help_string = f"**NOME PLUGIN:** `{plugin_name}` \n{cmd_list[plugin_name]}"
-    help_string += "\n\n[🌐 CANALE USERBOT](https://t.me/joinchat/HRIH1Ja8ky82MGVk) ".format(plugin_name)
+    help_string += "\n\n[🌐 CANALE USERBOT](https://t.me/c/1249905695/3) ".format(plugin_name)
     await cb.edit_message_text(
         help_string,
         reply_markup=InlineKeyboardMarkup(
